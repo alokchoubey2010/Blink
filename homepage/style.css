@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+}
+
+@font-face {
+  src: url('/fonts and icons/Poppins-Regular.ttf');
+  font-family: poppins;
+}
+
+body {
+  background: #1c1f2b;
+  color: white;
+}
+
+.logo{
+  font-size: 22px;
+  position: relative;
+  left: -5px;
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+}
+
+.icons{
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.input {
+  width: 96%;
+  height: fit-content;
+  position: relative;
+}
+
+.input input {
+  padding: 10px 20px;
+  border: 2px solid #465EFC;
+  background: transparent;
+  border-radius: 8px;
+  outline: none;
+  transition: all .7s;
+  color: #fff;
+  width: 100%;
+}
+
+.input span.label {
+  position: absolute;
+  top: 10px;
+  left: 18px;
+  font-size: 14px;
+  opacity: .956;
+  transition: .4s;
+  letter-spacing: 0px;
+  color: #fff;
+}
+
+.input input:focus~span.label,
+.input input:valid~span.label {
+  transform: translateX(6px) translateY(-19px);
+  font-size: .85em;
+  text-transform: uppercase;
+  border-left: 2px solid #465EFC;
+  border-right: 2px solid #465EFC;
+  text-shadow: 0 0 10px #465EFC;
+  background: #1c1f2b;
+  padding: 0 10px;
+  color: white;
+}
+
+#iconNav{
+  width: 26px;
+}
+
+.bottomNav{
+  position: absolute;
+  bottom: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  background: linear-gradient(4deg,#232526, #414345);
+  border-bottom: .1px solid #465EFC;
+  padding: 6px 0px;
+  border-radius: 12px;
+  width: 98%;
+  margin-left: 1%;
+}
+
+.item{
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  justify-content: center;
+  align-items: center;
+}
+
+.item p{
+  font-size: 11px;
+}
