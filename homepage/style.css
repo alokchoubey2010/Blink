@@ -79,18 +79,20 @@ body {
 }
 
 .bottomNav{
-  position: absolute;
-  bottom: 12px;
+  position: fixed;
+  z-index: 1111;
+  bottom: 0px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   width: 100%;
   background: linear-gradient(4deg,#232526, #414345);
   border-bottom: .1px solid #465EFC;
-  padding: 6px 0px;
   border-radius: 12px;
+  height: 55px;
   width: 98%;
   margin-left: 1%;
+  box-shadow: 0 0 12px #000;
 }
 
 .item{
@@ -101,6 +103,109 @@ body {
   align-items: center;
 }
 
+.title{
+  display: none;
+}
+
 .item p{
+  font-size: 11px;
+}
+
+.blinks{
+  margin-top: 20px;
+  display: flex;
+  overflow: scroll;
+  gap: 20px;
+  scroll-behavior: smooth;
+  margin-left: 12px;
+  padding-bottom: 35px;
+}
+
+.blink{
+  min-width: 150px;
+  height: 200px;
+  background: #42445A;
+  border-radius: 10px;
+  position: relative;
+  overflow: visible;
+}
+
+.blinkerName{
+  position: absolute;
+  bottom: -25px;
+  font-size: 13px;
+  left: 45px;
+}
+
+#blinker{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  bottom: -35px;
+  left: 5px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.blinkTitle{
+  font-size: 10px;
+  position: absolute;
+  left: 45px;
+  bottom: -37px;
+}
+
+.heart{
+  width: 26px;
+  position: absolute;
+  top: 3px;
+  right: 3px;
+}
+
+.blinkPosts{
+  margin-top: 20px;
+  width: 94%;
+  height: fit-content;
+  margin-left: 3%;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.blinkPost{
+  position: relative;
+  border: 1px solid white;
+  border-radius: 10px;
+  min-height: 180px;
+  width: 100%;
+}
+
+.heartPost{
+  width: 28px;
+  position: absolute;
+  bottom: -33px;
+  right: 5px;
+}
+
+#postBlinker{
+  width: 35px;
+  height: 35px;
+  border: 1px solid;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -40px;
+  left: 5px;
+}
+
+.postBlinkerName{
+  position: absolute;
+  bottom: -28px;
+  font-size: 14px;
+  left: 55px;
+}
+
+.postBlinkTitle{
+  position: absolute;
+  bottom: -40px;
+  left: 55px;
   font-size: 11px;
 }

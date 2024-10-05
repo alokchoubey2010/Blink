@@ -1,5 +1,7 @@
-item = document.querySelector(".item");
-item.addEventListener('click', () =>{
-  var icon = this.querySelector("icon");
-  icon.style.background = 'aqua';
-})
+const heartIcons = document.querySelectorAll('.heart');
+
+function like() {
+  this.style.display = 'none';
+}
+  
+heartIcons.forEach((item) => item.addEventListener('click', like));
